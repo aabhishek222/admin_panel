@@ -77,7 +77,6 @@
               <li>
                 <a href="index.html">
                   <i class="fe-airplay"></i>
-                  <span class="badge badge-success float-right">01</span>
                   <span> Dashboard </span>
                 </a>
               </li>
@@ -115,254 +114,113 @@
           <div class="container-fluid">
             <!-- start page title -->
 
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h1>Interests</h1>
-                    <p class="sub-header"></p>
-
-                    <table
-                      id="key-datatable"
-                      class="table dt-responsive nowrap w-100"
-                    >
-                      <thead>
-                        <tr>
-                          <th>Sub-Category</th>
-
-                          <th>Category</th>
-                        </tr>
-                      </thead>
-
-                      <tbody>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-danger waves-effect waves-light"
-                            >
-                              Delete
-                            </button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- end card body-->
-                </div>
-                <!-- end card -->
-              </div>
-              <!-- end col-->
-            </div>
-            <!-- end row-->
             <div class="d-flex flex-row justify-content-around">
               <button
                 type="button"
                 class="btn btn-primary waves-effect waves-light"
                 id="add-offer"
               >
-                Add Category
-              </button>
-              <button
-                type="button"
-                class="btn btn-primary waves-effect waves-light"
-                id="add-sub"
-              >
-                Add Subcategory
+                Add Post
               </button>
             </div>
 
             <!-- popup -->
-            <div id="add-popup" class="d-none my-3">
+            <div
+              id="add-modal"
+              class="d-none"
+              style="height: max-content; padding: 2em 0 50em 0"
+            >
               <div
-                class="d-flex justify-content-center mx-auto popit"
-                style="
-                  background-color: rgb(214, 236, 236);
-                  height: 15em;
-                  width: 50em;
-                  z-index: 999;
-                "
+                class="add-modal-content mx-auto border"
+                style="width: 42em; background-color: #e7ebee"
               >
-                <form class="mt-3 d-flex justify-content-center flex-column">
-                  <h1 class="mx-auto">Add Category</h1>
-                  <i
-                    class="
-                      material-icons
-                      align-center
-                      d-flex
-                      justify-content-end
-                    "
-                    id="pop-close"
-                  >
-                    close
-                  </i>
+                <i
+                  class="material-icons align-center d-flex justify-content-end"
+                  id="pop-close"
+                >
+                  close
+                </i>
+                <p
+                  style="font-size: 22px; color: #0063a7; font-weight: 700"
+                  class="text-center pb-4 border-bottom"
+                >
+                  Create Post
+                </p>
+                <div class="d-flex flex-row mt-4">
+                  <img
+                    src="https://source.unsplash.com/random/72x72"
+                    class="my-start rounded-circle"
+                    width="50"
+                    height="50"
+                    style="border-radius: 4px"
+                    alt="Icon"
+                  />
+                  <b class="my-auto ml-1">Mohit Tomar</b>
+                </div>
+                <form>
+                  <textarea
+                    class="form-control my-4 py-3"
+                    placeholder="Share your creativity"
+                    style="border: unset; color: #a0a0a0"
+                  ></textarea>
+                  <div class="d-flex flex-row">
+                    <div class="inputOption d-flex flex-row">
+                      <i style="color: #70b5f9" class="material-icons">
+                        insert_photo
+                      </i>
+                      <p
+                        style="font-weight: 600"
+                        onclick="document.getElementById('upload_file').click()"
+                      >
+                        Add Photo
+                      </p>
+                    </div>
+                    <div class="inputOption d-flex flex-row">
+                      <i style="color: #70b5f9" class="material-icons">
+                        insert_photo
+                      </i>
+                      <p
+                        style="font-weight: 600"
+                        onclick="document.getElementById('getVideo').click()"
+                      >
+                        Add Video
+                      </p>
+                    </div>
+                  </div>
+                  <div id="wrapper">
+                    <input
+                      type="file"
+                      style="display: none"
+                      id="upload_file"
+                      name="upload_file[]"
+                      onchange="preview_image();"
+                      multiple
+                      accept="image/*"
+                    />
 
+                    <div id="image_preview"></div>
+                  </div>
                   <input
-                    name="Category"
-                    type="text"
-                    placeholder="Category"
-                    class="form-control px-2 mx-auto"
-                    style="width: 15em"
-                    id="title"
+                    type="file"
+                    id="getVideo"
+                    style="display: none"
+                    name="file[]"
+                    class="file_multi_video"
+                    accept="video/*"
                   />
-                  <input
-                    name="Subcategory"
-                    type="text"
-                    placeholder="Subcategory"
-                    class="form-control px-2 mt-2 mx-auto"
-                    style="width: 25em; height: 5em"
-                    id="achievements"
-                  />
-                  <button class="add-offers-btn w-25 mx-auto mt-2 mb-4">
-                    Add
-                  </button>
-                </form>
-              </div>
-            </div>
-            <!-- popup -->
-            <!-- popup -->
-            <div id="add-subpopup" class="d-none my-3">
-              <div
-                class="d-flex justify-content-center mx-auto popit"
-                style="
-                  background-color: rgb(214, 236, 236);
-                  height: 15em;
-                  width: 50em;
-                  z-index: 999;
-                "
-              >
-                <form class="mt-3 d-flex justify-content-center flex-column">
-                  <h1 class="mx-auto">Add Category</h1>
-                  <i
-                    class="
-                      material-icons
-                      align-center
-                      d-flex
-                      justify-content-end
-                    "
-                    id="pop-subclose"
+                  <video
+                    class="w-100"
+                    id="videopop"
+                    controls
+                    style="display: none"
                   >
-                    close
-                  </i>
-
-                  <select
-                    name="event_type"
-                    id="event_type"
-                    class="form-control"
+                    <source src="mov_bbb.mp4" id="video_here" />
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <button
+                    class="btn-danger mx-auto d-flex justify-content-center"
                   >
-                    <option disabled selected>Event Type</option>
-                    <option value="Online">Online</option>
-                    <option value="Personal">Personal</option>
-                    <option value="Both">Both</option>
-                  </select>
-                  <input
-                    name="Subcategory"
-                    type="text"
-                    placeholder=" Enter Subcategory"
-                    class="form-control px-2 mt-2 mx-auto"
-                    style="width: 25em; height: 5em"
-                    id="achievements"
-                  />
-                  <button class="add-offers-btn w-25 mx-auto mt-2 mb-4">
-                    Add
+                    Add Post
                   </button>
                 </form>
               </div>
@@ -521,32 +379,57 @@
 
     <script>
       const addOfferBtn = document.querySelector("#add-offer");
-      const addSubBtn = document.querySelector("#add-sub");
-      const addSubpopup = document.querySelector("#add-subpopup");
-      const closeSubpopup = document.querySelector("#pop-subclose");
-      const addpopup = document.querySelector("#add-popup");
+      const addModal = document.querySelector("#add-modal");
       const closepopup = document.querySelector("#pop-close");
 
       closepopup.addEventListener("click", () => {
-        addpopup.classList.contains("d-none")
-          ? addpopup.classList.remove("d-none")
-          : addpopup.classList.add("d-none");
-      });
-      closeSubpopup.addEventListener("click", () => {
-        addSubpopup.classList.contains("d-none")
-          ? addSubpopup.classList.remove("d-none")
-          : addSubpopup.classList.add("d-none");
+        addModal.classList.contains("d-none")
+          ? addModal.classList.remove("d-none")
+          : addModal.classList.add("d-none");
       });
 
       addOfferBtn.addEventListener("click", () => {
-        addpopup.classList.contains("d-none")
-          ? addpopup.classList.remove("d-none")
-          : addpopup.classList.add("d-none");
+        addModal.classList.contains("d-none")
+          ? addModal.classList.remove("d-none")
+          : addModal.classList.add("d-none");
       });
-      addSubBtn.addEventListener("click", () => {
-        addSubpopup.classList.contains("d-none")
-          ? addSubpopup.classList.remove("d-none")
-          : addSubpopup.classList.add("d-none");
+    </script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.form.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("form").ajaxForm(function () {
+          alert("Uploaded SuccessFully");
+        });
+      });
+
+      function preview_image() {
+        var total_file = document.getElementById("upload_file").files.length;
+        for (var i = 0; i < total_file; i++) {
+          $("#image_preview").append(
+            "<img class=img-thumbnail src=" +
+              URL.createObjectURL(event.target.files[i]) +
+              ">&nbsp;&nbsp;&nbsp;"
+          );
+        }
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+      //        var loadFile = function(event) {
+      //     var reader = new FileReader();
+      //     reader.onload = function(){
+      //       var output = document.getElementById('output');
+      //       output.src = reader.result;
+      //     };
+      //     reader.readAsDataURL(event.target.files[0]);
+      //   };
+      $(document).on("change", ".file_multi_video", function (evt) {
+        $("#videopop").removeAttr("style");
+        var $source = $("#video_here");
+        $source[0].src = URL.createObjectURL(this.files[0]);
+        $source.parent()[0].load();
       });
     </script>
     <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
